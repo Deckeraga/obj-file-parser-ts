@@ -1,6 +1,6 @@
 'use strict';
 
-const OBJFile = require('../src/OBJFile');
+import OBJFile from '../src/OBJFile';
 
 describe('OBJ File Parser', () => {
 

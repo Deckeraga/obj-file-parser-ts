@@ -1,39 +1,45 @@
 {
-  "name": "obj-file-parser",
-  "version": "0.5.0",
-  "description": "Wavefront 3D Object File (.OBJ) Parser",
+  "name": "obj-file-parser-ts",
+  "version": "0.6.0",
+  "description": "Wavefront 3D Object File (.OBJ) Parser.",
   "main": "./dist/OBJFile.js",
+  "types": "./dist/OBJFile.d.ts",
   "scripts": {
-    "lint": "eslint src/**",
-    "lint:fix": "eslint src/** --fix",
-    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
-    "test": "jest",
+    "lint": "tslint -p tsconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "test": "jest --config jestconfig.json",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WesUnwin/obj-file-parser.git"
+    "url": "https://github.com/Deckeraga/obj-file-parser.git"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": [
     "obj",
     "file",
     "3D",
     "parser",
     "wavefront",
-    "mtl"
+    "mtl",
+    "typescript"
   ],
-  "author": "Wesley Unwin <wes_unwin@hotmail.com>",
+  "author": "Alec Decker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/WesUnwin/obj-file-parser/issues"
+    "url": "https://github.com/Deckeraga/obj-file-parser/issues"
   },
-  "homepage": "https://github.com/WesUnwin/obj-file-parser#readme",
+  "homepage": "https://github.com/Deckeraga/obj-file-parser#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^4.5.0",
-    "eslint-config-airbnb-base": "^11.3.1",
-    "eslint-plugin-import": "^2.7.0",
-    "jest": "^20.0.4"
+    "@types/jest": "^24.0.12",
+    "jest": "^20.0.4",
+    "prettier": "^1.17.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.5"
   }
 }

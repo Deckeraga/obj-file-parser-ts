@@ -26,3 +26,7 @@
 0.5.0
 -----
  - Introduce linter (eslint)
+
+0.6.0 -> Typescript fork
+-----
+ - Convert from Javascript to Typescript
