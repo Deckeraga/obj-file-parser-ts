@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Deckeraga/obj-file-parser.git"
+    "url": "https://github.com/Deckeraga/obj-file-parser-ts.git"
   },
   "files": [
     "dist/**/*"
@@ -30,9 +30,9 @@
   "author": "Alec Decker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Deckeraga/obj-file-parser/issues"
+    "url": "https://github.com/Deckeraga/obj-file-parser-ts/issues"
   },
-  "homepage": "https://github.com/Deckeraga/obj-file-parser#readme",
+  "homepage": "https://github.com/Deckeraga/obj-file-parser-ts#readme",
   "devDependencies": {
     "@types/jest": "^24.0.12",
     "jest": "^20.0.4",
