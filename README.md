@@ -5,4 +5,4 @@ This is a fork of [obj-file-parser](https://github.com/WesUnwin/obj-file-parser)
   * Types
 
 ## Installation
- ```npm i @deckeraga/obj-file-parser-ts```
+ ```npm i obj-file-parser-ts```
