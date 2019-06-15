@@ -18,6 +18,16 @@ export default class OBJFile {
     }
   }
 
+  public parseAsync(): Promise<IResult> {
+    return new Promise((resolve, reject) => {
+      try {
+        resolve(this.parse());
+      } catch (theError) {
+        reject(theError);
+      }
+    });
+  }
+
   public parse(): IResult {
     const stripComments = (line: string) => {
       const commentIndex = line.indexOf('#');
