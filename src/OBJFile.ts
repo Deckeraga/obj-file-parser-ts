@@ -214,12 +214,12 @@ export default class OBJFile {
   }
 }
 
-interface IResult {
+export interface IResult {
   models: IModel[];
   materialLibraries: string[];
 }
 
-interface IModel {
+export interface IModel {
   name: string;
   vertices: IVertex[];
   textureCoords: ITextureVertex[];
@@ -227,26 +227,26 @@ interface IModel {
   faces: IFace[];
 }
 
-interface IFace {
+export interface IFace {
   material: string;
   group: string;
   smoothingGroup: number;
   vertices: IFaceVertexIndicies[];
 }
 
-interface IFaceVertexIndicies {
+export interface IFaceVertexIndicies {
   vertexIndex: number;
   textureCoordsIndex: number;
   vertexNormalIndex: number;
 }
 
-interface IVertex {
+export interface IVertex {
   x: number;
   y: number;
   z: number;
 }
 
-interface ITextureVertex {
+export interface ITextureVertex {
   u: number;
   v: number;
   w: number;
